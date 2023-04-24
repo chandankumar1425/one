@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score-Board</title>
+</head>
+<body>
+    <button id="show">Show-Scores</button>
+    <button id="refresh">Refresh</button>
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+
+    <div id="scores">
+        <p id="run">Run</p>
+        <p id="wicket">Wicket</p>
+        <p id="over">Over</p>
+    </div>
+
+   <a href="admin.html">Admin_Page</a>
+</body>
+</html>
+<script>
+ const socket = io("http://localhost:4500/", { transports: ["websocket"] });
+
+    socket.emit("greet","hello from client");
+    socket.on("msg",(msg)=>{
+        console.log(msg);
+    });
+    socket.on("score",(score)=>{
+        console.log(score);
+    });
+
+ 
+    async function render(){
+        try {
+            let resp=await fetch("http://localhost:4500/get");
+            if(resp.ok){
+                let res=await resp.json();
+                console.log(res);
+                display(res)
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    document.getElementById("refresh").addEventListener("click",()=>{
+        render()
+    })
+    document.getElementById("show").addEventListener("click",()=>{
+        render()
+    })
+    function display(data){
+        data.forEach(res => {
+            let run=document.getElementById("run");
+        let wicket=document.getElementById("wicket");
+        let over=document.getElementById("over");
+        run.innerText=`run: ${res.score}`;
+        wicket.innerText=`wicket: ${res.wicket}`;
+        over.innerText=`over: ${res.over}`
+        });
+       
+    };
+    setInterval(() => {
+        render()
+        console.log("object");
+    }, 30000);
+</script>

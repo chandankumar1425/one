@@ -68,6 +68,7 @@ function outputMessage(message){
 
     const div = document.createElement("div");
     div.classList.add("message");
+    console.log(classList)
 
     const p = document.createElement("p");
 

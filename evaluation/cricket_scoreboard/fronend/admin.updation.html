@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updation</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="team-name" id="team">
+        <input type="text" placeholder="score" id="score">
+        <input type="text" placeholder="batsman" id="batsman">
+        <input type="text" placeholder="over" id="over">
+        <input type="text" placeholder="bowler" id="bowler">
+        <input type="text" placeholder="wicket" id="wicket">
+        
+        <input type="submit" class="btn btn-primary">
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",(e)=>{
+       e.preventDefault()
+        let team=document.getElementById("team").value;
+    let score=document.getElementById("score").value;
+    let batsman=document.getElementById("batsman").value;
+    let over=document.getElementById("over").value;
+    let bowler=document.getElementById("bowler").value;
+    let wicket=document.getElementById("wicket").value;
+    let[bat1,bat2]=batsman.split(" ");
+    let obj={
+        team,
+        score,
+        batsman,
+        over,
+        wicket,
+        bowler
+    }
+    // console.log(obj);
+    postdata(obj)
+    })
+
+    async function postdata(obj){
+        try {
+            console.log(obj);
+            let res=await fetch("http://localhost:4500/admin/post",{
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body:JSON.stringify(obj)
+            });
+            if(res.ok){
+            let result=await res.json();
+            console.log(result);
+            alert(result.msg)
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+
+
+
+</script>

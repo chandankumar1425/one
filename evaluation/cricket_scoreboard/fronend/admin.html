@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Updation</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="name" id="name">
+        <input type="password" placeholder="password" id="pass">
+        <input type="submit">
+    </form>
+
+</body>
+</html>
+<script>
+    let name="admin";
+    let pass="admin";
+
+    document.querySelector("form").addEventListener("submit",(e)=>{
+        e.preventDefault();
+        let a=document.getElementById('name').value;
+        let b=document.getElementById("pass").value;
+        if(a==name&&b==pass){
+            window.location.href="./admin.updation.html"
+        }else{
+            alert("you are not admin")
+        }
+
+    })
+</script>

@@ -1,0 +1,43 @@
+// const regex43 = /^[A-Z][a-z]+-\d{4}$/; // Use \d to match any digit (0-9) instead of [0-9]
+
+// const str = "Albert-0101";
+
+// const isValid = regex43.test(str); // Use a more descriptive variable name
+
+// if (isValid) {
+//   console.log(`${str} is a valid string.`);
+// } else {
+//   console.log(`${str} is not a valid string.`);
+// }
+
+// const match = str.match(regex43);
+// console.log(match);
+
+
+
+
+
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+const regex43 = /^[A-Z][a-z]+-\d{4}$/;
+
+rl.question('Enter a string to validate: ', (str) => {
+  const isValid = regex43.test(str);
+
+  if (isValid) {
+    console.log(`${str} is a valid string.`);
+  } else {
+    console.log(`${str} is not a valid string.`);
+  }
+
+  const match = str.match(regex43);
+  console.log(match);
+
+  rl.close();
+});
