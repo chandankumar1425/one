@@ -1,4 +1,3 @@
-
 const chatForm = document.getElementById("chat-form");
 const chatMessages = document.querySelector(".chat-messages");
 const roomName = document.getElementById("room-name");
@@ -68,7 +67,6 @@ function outputMessage(message){
 
     const div = document.createElement("div");
     div.classList.add("message");
-    console.log(classList)
 
     const p = document.createElement("p");
 
