@@ -1,0 +1,175 @@
+COMPLETED - https://oj.masaischool.com/contest/2634/problems (ARRAYS AND STRINGS | 23-12-2021)
+1. Check Palindrome //done
+2. Count Chars //done
+3. Encrypt It //done
+4. Three Max, Three Min Please //done
+5. Battle of Odd and Even //done
+
+COMPLETED - https://oj.masaischool.com/contest/2641/problems (MAPS AND OBJECTS | 24-12-2021)
+1. Alan and Frequency //done
+2. Answer Queries //done
+3. Check duplicate //done
+4. Anagram Pairs //done 
+5. An Anagram Problem //done
+6. Such Pair Returns //done
+
+https://oj.masaischool.com/contest/2659/problems (STACKS & QUEUE | 28-12-2021)
+1. Infix to Postfix
+2. Use Side Lane // done
+3. Strings with Parenthesis // done
+4. Next Greater Element // done
+5. Alan & Christopher // done
+6. Can you find the sum //done
+7. Detect Palindrome 2 // done
+
+https://oj.masaischool.com/contest/2690/problems (DP 29-12-2021)
+1. The question with immense practical application
+2. DpNation - is it a subsequence // done
+3. DpNation - Robbing House 1 // done
+4. Unique ways of Coin Change // done
+5. Word Break
+
+https://oj.masaischool.com/contest/2695/problems (DP 30-12-2021)
+
+https://oj.masaischool.com/contest/2707/problems (Sorting 31-12-2021)
+1. Merge Sorting // done
+2. Quickly Sort it
+3. Bubble Sort Problem // done
+4. Selection Sort Problem // done
+5. Opp Quick Sort
+6. Count inversions(Using Merge Sort) // done
+
+https://oj.masaischool.com/contest/2731/problems (TWO POINTERS SLIDING WINDOW 4-01-2022)
+1. Sum of subarray // done
+2. Abandoned city
+3. Substrings with K distinct letters // done
+4. Gifts
+5. Two Sorted Arrays // done
+6. Number of Segments with Good Sum
+7. Sum of Subarray
+
+https://oj.masaischool.com/contest/2751 (BINARY SEARCH 5-01-2022)
+1. Search in O(logn) //done
+2. Number of Occurences in logn  //done
+3. Life of a CTO //done
+4. Count triplets
+5. Coding Practice Time
+6. Jio Tower
+7. Wood Cutter
+8. Social Distancing
+
+https://oj.masaischool.com/contest/2762/problems (STACKS AND QUEUES 6-01-2022)
+1. Masai Coding Competition
+2. Nearest Smaller Element
+3. List and Queue
+4. List and Queue 2
+5. Nick and Soldiers
+6. Tallest Around
+7. Buy Ticket // done
+
+https://oj.masaischool.com/contest/2764/problems (LINKEDLIST 7-01-2022)
+1. Insert a node at the head //done
+2. Insert a node at the tail //done
+3. Insert node at a specific position //done
+4. Delete node without head //done
+5. Middle node //done
+6. Reverse the linked list //done
+7. Add two linked list //done
+8. Palindrome List //done
+9. Merge two Linked List  //done
+10. Dr. Strange and possibilities //done
+11. Generate Permutations //done
+12. Opp Quick Sort
+13. Fixing Maze
+
+https://oj.masaischool.com/contest/2783/problem/01 (ASSORTED QUESTIONS 8-01-2022)
+1. National Award Ceremony //done
+2. Man of the Match //done
+3. Is it Triangle? //done
+4. Lifeboats //done
+5. Longest increasing Subarray //done
+6. Weighted Sum //done
+7. Good Pairs //done
+8. Fixing Maze 
+9. Detective L
+10. Transformation possibility?
+
+https://oj.masaischool.com/contest/2797/problems (ASSORTED QUESTIONS 10-01-2022)
+1. Implement GCD
+2. Can they be equal?.
+3. Mayfair Hotel
+4. Balanced Subarray
+5. A -> B Possible?.
+6. Lifeboats
+7. Total Matches
+
+COMPLETED - https://oj.masaischool.com/contest/2809 (ASSORTED QUESTIONS 12-01-2022)
+1. Number of ways problem returns //done
+2. Odd subset //done
+3. The peak point //done
+4. Betty Buys A Present //done
+5. Take out maximum //done
+6. Such Pair Returns //done
+7. Difference of K //done
+
+https://oj.masaischool.com/contest/2704/problem/1-2 (INTERVIEW PREP)
+
+https://oj.masaischool.com/contest/2824/problems (ASSORTED QUESTIONS 13-01-2022)
+1. Rotate Elements // done
+2. Equilibrium Element // done
+3. Element in the middle // done
+4. Who is going Forward?. // done
+5. Compete with Neighbour Returns
+6. Reduce String // done
+7. Next Greater Element // done
+
+COMPLETED - https://oj.masaischool.com/contest/2839/problems (ASSORTED QUESTIONS 14-01-2022)
+1. Search in sorted and rotate Arrays //done
+2. Minimum in sorted and rotated array //done
+3. Number of ways problem //done
+4. Take out maximum //done
+5. Rotate the array returns back //done
+6. Mr Robot - Elliot. //done
+
+https://oj.masaischool.com/contest/2847/problems (ASSORTED QUESTIONS 15-01-2021)
+1. Spiral Traversal
+2. Rotate by 180
+3. Diamond Traversal
+4. Pair less than K
+5. Again a classical problem
+6. Different Ways to Buy Candies 2
+
+https://oj.masaischool.com/contest/2856/problems (ASSORTED QUESTIONS 17-01-2021)
+1. Minimize the integer
+2. Birthday Shopping // done
+3. Buggy Update // done
+4. Total Matches // done
+5. An Anagaram Problem // done
+
+https://oj.masaischool.com/contest/2864/problems (ASSORTED QUESTIONS 18-01-2022)
+1. Search in sorted and rotated array
+3. Different ways to buy candies.
+5. Common Start (https://www.geeksforgeeks.org/longest-common-prefix-using-binary-search/?ref=lbp)
+
+COMPLETED - https://oj.masaischool.com/contest/2876/problems (ASSORTED QUESTIONS 19-01-2022)
+1. All Twice Except One //done
+2. Alex and his OCD //done
+3. Nikhil and Search //done
+4. Nick and Hacks //done
+5. Detect Palindrom 2 //done
+
+https://oj.masaischool.com/contest/2890/problems
+1. Strong String Queries
+2. Fibonaci-Recursion
+3. Fibonaci Returns Again
+4. Next Greater Element
+5. Minimum in sorted & rotated Array
+6. Rotate Elements
+
+https://oj.masaischool.com/contest/2894/problems  (ASSORTED QUESTIONS)
+
+https://oj.masaischool.com/contest/2907 (ASSORTED QUESTIONS 24-01-2022)
+
+https://oj.masaischool.com/contest/2911/problems (ASSORTED QUESTIONS 25-01-2022 )
+
+https://oj.masaischool.com/contest/2927/problems (ASSORTED QUESTIONS 27-01-2022)

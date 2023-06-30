@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debouncing</title>
+  </head>
+  <body>
+    <center>
+      <h1 id="header"></h1>
+      <button id="click">CLICK ME</button>
+    </center>
+    <!-- <button id="debounce-btn">Click me to debounce</button>
+    <button id="throttle-btn">Click me to throttle</button> -->
+  </body>
+</html>
+<script>
+  const makeApiCall = () => {
+    console.log("api call in progess");
+  };
+
+  //-------------Debouncing Code-------------//
+  const debouncer = (func, delay) => {
+    // Should remember if the call is called
+    let debouncing;
+    return function () {
+      debouncing && clearTimeout(debouncing);
+      debouncing = setTimeout(() => {
+        func.apply(this, arguments);
+      }, delay);
+    };
+  };
+
+  // function debounce(callback, delay) {
+  //   let timeout;
+  //   return function () {
+  //     timeout && clearTimeout(timeout);
+  //     timeout = setTimeout(() => {
+  //       callback();
+  //     }, delay);
+  //   };
+  // }
+
+  window.addEventListener("load", function () {
+    var btn = document.getElementById("click");
+    btn.addEventListener("click", debouncer(makeApiCall, 1000));
+    // btn.addEventListener("click", debounce(makeApiCall, 1000));
+  });
+  //----------------------------------------//
+
+  //-------------Throttling Code-------------//
+
+  // function throttle(fn, limit) {
+  //   let flag = true;
+  //   console.log("throttle", arguments);
+  //   return function () {
+  //     if (flag) {
+  //       // fn(args);
+  //       fn.apply(this, arguments);
+  //       flag = false;
+  //       setTimeout(() => {
+  //         flag = true;
+  //       }, limit);
+  //     }
+  //   };
+  // }
+
+  // function throttle(fn, wait) {
+  //   let lastCall = 0;
+  //   return function () {
+  //     if (Date.now() - lastCall > wait) {
+  //       lastCall = Date.now();
+  //       fn.apply(this, arguments);
+  //     }
+  //   };
+  // }
+
+  //----------------------------------------//
+  // window.addEventListener("load", function () {
+  //   var btn = document.getElementById("click");
+  //   btn.addEventListener("click", throttle(makeApiCall, 5000));
+  // });
+
+  // function throttle(fn, interval) {
+  //   var flag = true;
+  //   return function () {
+  //     if (flag) {
+  //       fn();
+  //       flag = false;
+  //       setTimeout(() => {
+  //         flag = true;
+  //       }, interval);
+  //     }
+  //   };
+  // }
+</script>
+<!-- ANOTHER WAY OF DOING DEBOUNCING AND THROTTLING -->
+<!-- <script>
+  const makeApiCall = (str) => {
+    console.log("Making an API call", str);
+  };
+
+  function debounce(fn, delay) {
+    let debounce;
+    return function (...args) {
+      debounce && clearTimeout(debounce);
+      debounce = setTimeout(() => {
+        fn(...args);
+      }, delay);
+    };
+  }
+
+  function throttle(fn, interval) {
+    let flag = true;
+    return function (...args) {
+      if (flag) {
+        flag = false;
+        fn(...args);
+        setTimeout(() => {
+          flag = true;
+        }, interval);
+      }
+    };
+  }
+
+  const debounceBtn = document.getElementById("debounce-btn");
+  const throttleBtn = document.getElementById("throttle-btn");
+
+  const debouncedApiCall = debounce(makeApiCall, 1000);
+  const throttledApiCall = throttle(makeApiCall, 1000);
+
+  debounceBtn.onclick = () => {
+    debouncedApiCall("from debounce");
+  };
+
+  throttleBtn.onclick = () => {
+    throttledApiCall("from throttle");
+  };
+</script> -->
