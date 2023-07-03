@@ -1,0 +1,38 @@
+#myLogin_form{
+    /* border:1px solid black; */
+    width: 20%;
+
+    margin:auto;
+    padding: 1rem;
+    margin-top:2rem ;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+#myLogin_form >div{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#heading{
+    text-align: center;
+}
+
+#loginbutt{
+    /* border:1px solid red; */
+    width:100px;
+    margin: auto;
+}
+
+#loginbutt>input{
+    /* border:1px solid blue; */
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: large;
+}
+
+#loginbutt>input:hover{
+    background-color: red;
+}

@@ -1,0 +1,84 @@
+#card{
+    /* border:1px solid black; */
+    /* width: 20%; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#card>h4{
+    text-align: center;
+}
+
+#imgdiv>img{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+#imgdiv{
+    margin: auto;
+    /* border:1px solid blue; */
+    width: 60px;
+    
+}
+
+#curdDiv{
+    display: flex;
+    justify-content: space-around;
+}
+
+#dltimgdiv{
+    width: 60px;
+}
+
+#dltimgdiv>img{
+    width: 100%;
+}
+
+#editimgdiv{
+    width: 50px;
+}
+
+#editimgdiv>img{
+    width: 100%;
+}
+
+
+
+
+#data_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:1rem
+}
+
+#userModel{
+    /* border:1px solid black; */
+    width: 22%;
+    /* height: 100px; */
+    margin:auto;
+    position: relative;
+    margin-top: -20rem;
+    background-color: rgb(255, 0, 0);
+    display: none;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   
+
+}
+
+#Search_sort{
+    /* border:1px solid black; */
+    width: 30%;
+    margin: auto;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-bottom: 2rem;
+}
+
+#Search_sort>div{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar_container +h1{
+    text-align: center;
+}
